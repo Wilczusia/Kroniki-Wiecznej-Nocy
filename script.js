@@ -3,6 +3,7 @@ function checkPassword() {
     const enteredPassword = document.getElementById("password").value;
     const errorMessage = document.getElementById("error-message");
 
+    // Jeśli hasło jest poprawne
     if (enteredPassword === correctPassword) {
         window.location.href = "book.html"; // Przekierowanie do strony księgi
     } else {
