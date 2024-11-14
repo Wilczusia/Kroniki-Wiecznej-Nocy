@@ -1,8 +1,6 @@
 body {
-    background: url('assets/background.jpg') no-repeat center center fixed;
-    background-size: cover;
     font-family: 'Georgia', serif;
-    color: #eae0c8;
+    background-color: #f3f0e0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,80 +8,41 @@ body {
     margin: 0;
 }
 
-.book-container {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    max-width: 600px;
-    text-align: center;
-}
-.parchment-container {
+.book-container, .parchment-container {
     background: url('assets/parchment.jpg') no-repeat center center;
     background-size: cover;
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
-    max-width: 700px;
-    margin: 40px auto;
-    color: #3a2c1a;
-    font-family: 'Georgia', serif;
+    max-width: 800px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    text-align: justify;
-    line-height: 1.8;
-}
-
-.parchment-container h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 4px #000;
-}
-
-.parchment-container p {
-    margin-top: 10px;
-}
-
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px #000;
 }
 
 .password-section {
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 input[type="password"] {
     padding: 10px;
-    width: 70%;
-    border: none;
+    width: 60%;
+    border: 2px solid #3a2c1a;
     border-radius: 5px;
+    margin-right: 10px;
 }
 
 button {
-    padding: 10px;
-    border: none;
-    background-color: #7a5c3d;
+    padding: 10px 20px;
+    background-color: #3a2c1a;
     color: #fff;
-    cursor: pointer;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #5a442b;
+    background-color: #5b4930;
 }
 
-.hidden {
-    display: none;
-}
-
-#secret-content {
+#error-message {
     margin-top: 20px;
-    animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
