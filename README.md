@@ -1,1 +1,0 @@
-# ksiega-sharathry
