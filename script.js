@@ -1,12 +1,16 @@
 function checkPassword() {
-    const correctPassword = "sha'rathra"; // Ustaw swoje hasło tutaj
-    const enteredPassword = document.getElementById("password").value;
-    const errorMessage = document.getElementById("error-message");
+    var password = document.getElementById("password").value;
+    var correctPassword = "𐎘𐎧𐎀𐎩𐎗𐎀𐎚𐎧𐎗𐎌";  // Hasło zapisane w starożytnym języku
+    var errorMessage = document.getElementById("error-message");
+    var bookLink = document.getElementById("book-link");
 
-    // Jeśli hasło jest poprawne
-    if (enteredPassword === correctPassword) {
-        window.location.href = "book.html"; // Przekierowanie do strony księgi
+    if (password === correctPassword) {
+        // Jeśli hasło jest poprawne, pokazujemy link do księgi
+        bookLink.style.display = "inline";
+        errorMessage.style.display = "none";  // Ukryj komunikat o błędzie
     } else {
-        errorMessage.style.display = "block"; // Wyświetl komunikat o błędzie
+        // Jeśli hasło jest niepoprawne, pokazujemy komunikat o błędzie
+        bookLink.style.display = "none";  // Ukryj link do księgi
+        errorMessage.style.display = "inline";
     }
 }
