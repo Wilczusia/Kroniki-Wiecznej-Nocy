@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kroniki Wiecznej Nocy</title>
+    <title>Księga Sha'rathry</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Kroniki Wiecznej Nocy</h1>
-        <p>Wypowiedz inkantacje, aby otworzyć księgę:</p>
-        <input type="text" id="password" placeholder="Wpisz hasło...">
-        <button onclick="checkPassword()">Wypowiedz</button>
-        
-        <p id="error-message" style="display: none; color: red;">Nic sie nie dzieje.</p>
-
-        <a id="book-link" href="book.html" style="display: none;">Kliknij tutaj, aby otworzyć Księgę</a>
+    <div class="login-container">
+        <h1>wypowiedź inkantacje, aby otworzyć księgę</h1>
+        <input type="text" id="password" placeholder="Hasło">
+        <button id="submit-btn">Otwórz</button>
     </div>
 </body>
 </html>
