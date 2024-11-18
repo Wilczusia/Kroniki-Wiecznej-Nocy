@@ -18,9 +18,35 @@
     <!-- Zawartość książki -->
     <div id="book" style="display: none;">
         <h2>Kroniki Wiecznej Nocy</h2>
-        <p>„Od wieków, cienie wyciągają swoje dłonie, by zgarnąć dusze niewinnych, a imię Sha'rathry pozostaje jedynym światłem w mrocznych zakamarkach wieczności.”</p>
-        <p><strong>Przestroga:</strong> Kto nie wierzy w moc Sha'rathry, niech nigdy nie otwiera tej księgi.</p>
-        <p>Kontynuuj swoją podróż na własną odpowiedzialność...</p>
+        <div id="table-of-contents">
+            <h3>Spis treści:</h3>
+            <ul>
+                <li><a href="#" onclick="goToPage(1)">Strona 1: Wprowadzenie</a></li>
+                <li><a href="#" onclick="goToPage(2)">Strona 2: Historia Sha'rathry</a></li>
+                <li><a href="#" onclick="goToPage(3)">Strona 3: Przestrogi</a></li>
+                <!-- Dodaj więcej stron w spisie treści -->
+            </ul>
+        </div>
+
+        <div id="page-1" class="page">
+            <h2>Strona 1: Wprowadzenie</h2>
+            <p>„Od wieków, cienie wyciągają swoje dłonie, by zgarnąć dusze niewinnych, a imię Sha'rathry pozostaje jedynym światłem w mrocznych zakamarkach wieczności.”</p>
+        </div>
+
+        <div id="page-2" class="page" style="display: none;">
+            <h2>Strona 2: Historia Sha'rathry</h2>
+            <p>Sha'rathry, w swojej nieskończonej mocy, stworzyła świat, który balansuje na granicy światła i cienia. Niektórzy mówili, że to ona była początkiem wszelkiego życia, inni twierdzili, że wyłoniła się z wieczności.</p>
+        </div>
+
+        <div id="page-3" class="page" style="display: none;">
+            <h2>Strona 3: Przestrogi</h2>
+            <p>„Kto nie wierzy w moc Sha'rathry, niech nigdy nie otwiera tej księgi. Prawda jest zbyt okrutna, by była znana zwykłym śmiertelnikom.”</p>
+        </div>
+
+        <div id="navigation">
+            <button id="prev-btn" onclick="prevPage()">Poprzednia Strona</button>
+            <button id="next-btn" onclick="nextPage()">Następna Strona</button>
+        </div>
     </div>
 </body>
 </html>
