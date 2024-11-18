@@ -16,13 +16,19 @@ body {
 }
 
 #book {
-    background: url('parchment.jpg') no-repeat center center;
+    background: url('assets/parchment.jpg') no-repeat center center;
     background-size: cover;
-    padding: 20px;
+    color: #333; /* Kolor tekstu dla lepszej czytelności na tle pergaminu */
+    padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    display: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    font-family: 'Georgia', serif;
+    max-width: 800px;
+    margin: 20px auto;
+    display: none; /* Na początku ukryte */
+    line-height: 1.6;
 }
+
 
 h1, h2 {
     margin-bottom: 20px;
