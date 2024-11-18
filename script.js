@@ -1,16 +1,11 @@
-function checkPassword() {
-    var password = document.getElementById("password").value;
-    var correctPassword = "𐎘𐎧𐎀𐎩𐎗𐎀𐎚𐎧𐎗𐎌";  // Hasło zapisane w starożytnym języku
-    var errorMessage = document.getElementById("error-message");
-    var bookLink = document.getElementById("book-link");
+document.getElementById("submit-btn").addEventListener("click", function() {
+    const passwordInput = document.getElementById("password").value;
+    const correctPassword = "𐎘𐎧𐎀𐎩𐎗𐎀𐎚𐎧𐎗𐎌"; // Twoje hasło w starożytnym języku
 
-    if (password === correctPassword) {
-        // Jeśli hasło jest poprawne, pokazujemy link do księgi
-        bookLink.style.display = "inline";
-        errorMessage.style.display = "none";  // Ukryj komunikat o błędzie
+    if (passwordInput === correctPassword) {
+        // Przekierowanie do strony 'book.html'
+        window.location.href = "book.html";
     } else {
-        // Jeśli hasło jest niepoprawne, pokazujemy komunikat o błędzie
-        bookLink.style.display = "none";  // Ukryj link do księgi
-        errorMessage.style.display = "inline";
+        alert("Nic sie nie stało");
     }
-}
+});
